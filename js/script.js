@@ -17,11 +17,11 @@
       $("ul#contacts").append("<li><span class='contact'>" + newContact.firstName + newContact.lastName + "</span></li>");
       $(".contact").last().click(function() {
           $("#show-contact").show();
-          $("#show-contact h2").text(newContact.firstName);
+          $("#show-contact h2").text(newContact.lasttName);
           $(".first-name").text(newContact.firstName);
           $(".last-name").text(newContact.lastName);
         });
-        
+
       $("input#new-first-name").val("");
       $("input#new-last-name").val("");
     });
