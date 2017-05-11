@@ -3,6 +3,9 @@
     this.firstName = first;
     this.lastName = last;
   }
+  Contact.prototype.fullname= function(){
+    return this.firstName + "" + this.lastName;
+  }
 
   // user interface logic
   $(document).ready(function() {
